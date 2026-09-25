@@ -10,3 +10,32 @@ module.exports = {
   removeLastProduct: typeof removeLastProduct !== 'undefined' ? removeLastProduct : undefined,
   products
 };
+
+const products = ["Laptop" , "Phone" , "Headphones" , "Monitor"];
+
+function logFirstProduct() {
+  console.log(products[0]);
+}
+
+function addProducts(productName){
+  products.push(productName);
+}
+addProducts("Earpod");
+
+console.log(products);
+
+function updateProductName(position, newName) {
+  products[position] = newName;
+}
+
+updateProductName(2 , "smartphone");
+
+console.log(products);
+
+
+function removeLastProduct() {
+  products.pop();
+}
+removeLastProduct();
+
+console.log(products);
