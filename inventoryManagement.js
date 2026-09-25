@@ -5,10 +5,10 @@ function logFirstProduct() {
   console.log(products[0]);
 }
 
-function addProducts(productName){
+function addProduct(productName){
   products.push(productName);
 }
-addProducts("Earpod");
+addProduct("Earpod");
 
 console.log(products);
 
